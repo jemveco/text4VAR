@@ -107,8 +107,19 @@
     * A nivel de video:
       * Soft Voting: Top@1: 54.29%, Top@3: 75.71%
       * Hard Voting: Top@1: 54.29%, Top@3: 68.57%
-### Experimento: CLIP (ViT-L/14) con matriz de clasificación de descripciones sintéticas de las anomalías y con reducciones de dimensionalidad en esta y en el embedding de salida del transformer temporal. Todos estos experimentos son sin usar dropout, label smoothing y WeightedRandomSampler
+### Experimento: CLIP (ViT-L/14) con matriz de clasificación de descripciones sintéticas de las anomalías. Todos estos experimentos son sin usar dropout, label smoothing y WeightedRandomSampler
 9. Resultados:
+  * A nivel de segmento:
+    * Accuracy: Top@1: 51.92%, Top@3: 80.13%
+    * Precision: 48.78
+    * Recall: 39.69
+    * F1-score: 39.05
+  * A nivel de video:
+    * Soft Voting: Top@1: 52.14%, Top@3: 80.00%
+    * Hard Voting: Top@1: 52.14%, Top@3: 67.86%
+## Resultados de experimentos con XD-Violence:
+### Experimento: CLIP (ViT-L/14) con matriz de clasificación de descripciones sintéticas de las anomalías. Todos estos experimentos son sin usar dropout, label smoothing y WeightedRandomSampler
+10. Resultados:*
   * A nivel de segmento:
     * Accuracy: Top@1: 51.92%, Top@3: 80.13%
     * Precision: 48.78
