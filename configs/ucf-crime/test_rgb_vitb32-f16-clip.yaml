@@ -1,0 +1,44 @@
+#weights: exp/ucf-crime/ViT-L-14/2025_12_17_000144-clip_ucf_clip_segments_not_splitted_class_aug_no_reduce/model_best.pt
+weights: exp/ucf-crime/ViT-L-14/2025_12_15_002007-clip_ucf_clip_segments_not_splitted_class_aug/model_best.pt
+#projector: exp/ucf-crime/ViT-L-14/2025_12_17_000144-clip_ucf_clip_segments_not_splitted_class_aug_no_reduce/projection_matrix.pt
+projector: exp/ucf-crime/ViT-L-14/2025_12_15_002007-clip_ucf_clip_segments_not_splitted_class_aug/projection_matrix.pt
+#reductor: 2025_12_21_213614-clip_ucf_clip_segments_splitted_reduce_class-caption_576/
+seed: 1024
+data:
+    dataset: ucf-crime
+    modality: RGB
+    num_segments: 16
+    seg_length: 1
+    batch_size: 8
+    workers: 0
+    num_classes: 13
+    image_tmpl: frame_{}.jpg
+    val_root: /home/hpc/Documents/Emilio/data/UCF_Crime/Images
+    val_list: lists/ucf-crime/val.yaml
+    #label_list: lists/ucf_crime_grouped_labels.csv
+    label_list: lists/ucf_crime_labels.csv
+    input_size: 224
+    random_shift: True
+network:
+    arch: ViT-L/14  #ViT-B/32 ViT-B/16
+    init: True
+    drop_out: 0.0
+    emb_dropout: 0.0
+    type: clip_ucf
+    sim_header: Transf
+    drop: 0
+solver:
+    type: cosine
+    epochs: 15
+    start_epoch: 0
+    optim: adamw
+    lr: 2.e-5
+    lr_warmup_step: 5
+    weight_decay: 1.e-2
+    loss_type: CE
+    evaluate: False
+    clip_ratio: 0.1
+    grad_accumulation_steps: 2
+logging:
+    print_freq: 10
+    eval_freq: 5

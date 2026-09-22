@@ -1,0 +1,59 @@
+seed: 1024
+dataset:
+    name: ucf-crime  # Dataset's name (this will be used only for log info)
+    num_classes: 13  # Dataset's number of classes (this will be used only for log info)
+    modality: RGB    # Will process idividual frames/images or video? (RGB or video)
+    frame__idx_bias: 1
+    frame_template: frame_{}.jpg # The template for each frame in the case of RGB modality
+    num_segments: 16 # 
+    seg_length: 1
+    loop: True
+    # The root path to the dataset, this config is optional
+    # and if is not set nor defined then the path used to
+    # retrieve the each split will be the one defined in his
+    # path config, if set then this path will be concatenated
+    # with those paths to get the full path to each split
+    root_path: /mnt/data/Emilio/UCF_Crime/UCF_Crime
+    # Each split information should be defined has:
+    # "split":
+    #     path: path/to/the/split/data
+    #     list: path/to/the/file/with/the/split/info
+    train_data:
+        path: Images
+        list: lists/ucf-crime/train.yaml
+    val_data:
+        path: Images
+        list: lists/ucf-crime/val.yaml
+    label_list: lists/ucf-crime/ucf_crime_labels.csv # File containing the labels and IDs of each class
+    input_size: 224 # The size of each image/frame
+    sample_type: random_shift # process_by_frame | random_shift | val
+dataloader:
+    batch_size: 8
+    num_workers: 0
+network:
+    arch: ViT-B/32  # ViT-B/16 ViT-L/14
+    dropout: 0.2  # Dropout for the temporal transformer (VideoHead)
+    # type: clip_ucf # TODO: Check what is the use of this
+    video_head: TTrans
+    precision: AMP
+    projector: embeddings/single_description/clip/ViT-B32_no_reduce/2026_08_03_055839/projector/centroids_raw_clip_ViT-B32_nr.pt
+    # reductor: embeddings/clip/ViT-L14_pca_mean/2026_05_27_143549/reductor/384.pt
+solver:
+    type: cosine
+    epochs: 15
+    optimizer: adamw # Actually this is unnecessary
+    lr: 5.e-5 # TODO: Check this value
+    clip_ratio: 0.1
+    weight_decay: 0.05
+    criterion:
+        type: FL # FocalLoss
+        alpha: 0.25
+    lr_scheduler:
+      - type: LinearLR
+        epochs: 5 # Warmup epochs
+      - type: CosineAnnealingLR
+    evaluate: False # TODO: Check this value
+    grad_accumulation_steps: 1
+logging:
+    print_freq: 10
+    eval_freq: 1

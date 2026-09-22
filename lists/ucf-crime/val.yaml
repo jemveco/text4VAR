@@ -1,0 +1,917 @@
+Abuse:
+- name: Abuse028_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 165
+      end: 240
+- name: Abuse030_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1275
+      end: 1360
+Arrest:
+- name: Arrest001_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1185
+      end: 1485
+- name: Arrest007_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1530
+      end: 2160
+- name: Arrest024_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1005
+      end: 3105
+- name: Arrest030_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 5535
+      end: 7200
+- name: Arrest039_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 7215
+      end: 10335
+Arson:
+- name: Arson007_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2250
+      end: 5700
+- name: Arson009_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 220
+      end: 315
+- name: Arson010_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 885
+      end: 1230
+- name: Arson011_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 150
+      end: 420
+  - id: 1
+    timestamp-frames:
+      start: 680
+      end: 1267
+- name: Arson016_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1000
+      end: 1796
+- name: Arson018_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 270
+      end: 600
+- name: Arson022_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 3500
+      end: 4000
+- name: Arson035_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 600
+      end: 900
+- name: Arson041_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2130
+      end: 3615
+Assault:
+- name: Assault006_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1185
+      end: 8096
+- name: Assault010_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 11330
+      end: 11680
+  - id: 1
+    timestamp-frames:
+      start: 12260
+      end: 12930
+- name: Assault011_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 375
+      end: 960
+Burglary:
+- name: Burglary005_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 4710
+      end: 5040
+- name: Burglary017_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 150
+      end: 600
+- name: Burglary018_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 720
+      end: 1050
+- name: Burglary021_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 60
+      end: 200
+  - id: 1
+    timestamp-frames:
+      start: 840
+      end: 1340
+- name: Burglary024_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 60
+      end: 1230
+- name: Burglary032_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1290
+      end: 3690
+- name: Burglary033_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 60
+      end: 330
+- name: Burglary035_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1
+      end: 1740
+- name: Burglary037_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 240
+      end: 390
+  - id: 1
+    timestamp-frames:
+      start: 540
+      end: 1800
+- name: Burglary061_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 4200
+      end: 5700
+- name: Burglary076_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1590
+      end: 4300
+- name: Burglary079_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 7750
+      end: 10710
+- name: Burglary092_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 240
+      end: 420
+Explosion:
+- name: Explosion002_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1500
+      end: 2100
+- name: Explosion004_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 75
+      end: 225
+- name: Explosion007_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1590
+      end: 2280
+- name: Explosion008_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1005
+      end: 1245
+- name: Explosion010_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 285
+      end: 1080
+- name: Explosion011_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 795
+      end: 945
+- name: Explosion013_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2520
+      end: 2970
+- name: Explosion016_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 180
+      end: 450
+- name: Explosion017_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 990
+      end: 1440
+- name: Explosion020_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 60
+      end: 270
+- name: Explosion021_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 135
+      end: 270
+- name: Explosion022_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2230
+      end: 2420
+- name: Explosion025_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 260
+      end: 420
+- name: Explosion027_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 105
+      end: 180
+- name: Explosion028_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 280
+      end: 700
+- name: Explosion029_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1830
+      end: 2020
+- name: Explosion033_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 970
+      end: 1350
+  - id: 1
+    timestamp-frames:
+      start: 1550
+      end: 3156
+- name: Explosion035_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 250
+      end: 350
+- name: Explosion036_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1950
+      end: 2070
+- name: Explosion039_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 60
+      end: 150
+- name: Explosion043_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 4460
+      end: 4600
+Fighting:
+- name: Fighting003_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1820
+      end: 3103
+- name: Fighting018_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 80
+      end: 420
+- name: Fighting033_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 570
+      end: 840
+- name: Fighting042_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 290
+      end: 1200
+- name: Fighting047_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 200
+      end: 1830
+RoadAccidents:
+- name: RoadAccidents001_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 210
+      end: 300
+- name: RoadAccidents002_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 240
+      end: 300
+- name: RoadAccidents004_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 140
+      end: 189
+- name: RoadAccidents009_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 210
+      end: 240
+- name: RoadAccidents010_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 230
+      end: 270
+- name: RoadAccidents011_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 260
+      end: 300
+- name: RoadAccidents012_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 250
+      end: 390
+- name: RoadAccidents016_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 530
+      end: 720
+- name: RoadAccidents017_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 60
+      end: 130
+- name: RoadAccidents019_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 750
+      end: 900
+- name: RoadAccidents020_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 610
+      end: 730
+- name: RoadAccidents021_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 30
+      end: 90
+- name: RoadAccidents022_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 120
+      end: 220
+- name: RoadAccidents121_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 330
+      end: 390
+- name: RoadAccidents122_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 300
+      end: 360
+- name: RoadAccidents123_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 130
+      end: 210
+- name: RoadAccidents124_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 250
+      end: 420
+- name: RoadAccidents125_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 490
+      end: 600
+- name: RoadAccidents127_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2160
+      end: 2300
+- name: RoadAccidents128_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 90
+      end: 200
+- name: RoadAccidents131_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 180
+      end: 240
+- name: RoadAccidents132_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 220
+      end: 320
+- name: RoadAccidents133_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 270
+      end: 450
+Robbery:
+- name: Robbery048_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 450
+      end: 930
+- name: Robbery050_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 495
+      end: 1410
+- name: Robbery102_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1080
+      end: 1560
+- name: Robbery106_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 480
+      end: 600
+- name: Robbery137_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 135
+      end: 1950
+Shooting:
+- name: Shooting002_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1020
+      end: 1100
+- name: Shooting004_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 500
+      end: 660
+- name: Shooting007_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 45
+      end: 165
+- name: Shooting008_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 75
+      end: 315
+- name: Shooting010_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1095
+      end: 1260
+- name: Shooting011_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1480
+      end: 1750
+- name: Shooting013_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 860
+      end: 945
+- name: Shooting015_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 855
+      end: 1715
+- name: Shooting018_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 315
+      end: 480
+- name: Shooting019_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1020
+      end: 1455
+- name: Shooting021_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 480
+      end: 630
+- name: Shooting022_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2850
+      end: 3300
+- name: Shooting024_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 720
+      end: 1305
+- name: Shooting026_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 195
+      end: 600
+- name: Shooting028_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 285
+      end: 555
+- name: Shooting032_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 7995
+      end: 8205
+- name: Shooting033_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1680
+      end: 2000
+- name: Shooting034_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 960
+      end: 1050
+- name: Shooting037_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 140
+      end: 260
+- name: Shooting043_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 945
+      end: 1230
+- name: Shooting046_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 4005
+      end: 4230
+  - id: 1
+    timestamp-frames:
+      start: 4760
+      end: 5088
+- name: Shooting047_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2160
+      end: 3900
+  - id: 1
+    timestamp-frames:
+      start: 4860
+      end: 6600
+- name: Shooting048_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1410
+      end: 1730
+Shoplifting:
+- name: Shoplifting001_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1550
+      end: 2000
+- name: Shoplifting004_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2200
+      end: 4900
+- name: Shoplifting005_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 720
+      end: 930
+- name: Shoplifting007_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 550
+      end: 760
+  - id: 1
+    timestamp-frames:
+      start: 4630
+      end: 4920
+- name: Shoplifting010_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 750
+      end: 920
+  - id: 1
+    timestamp-frames:
+      start: 1550
+      end: 1970
+- name: Shoplifting015_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2010
+      end: 2160
+- name: Shoplifting016_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 630
+      end: 720
+- name: Shoplifting017_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 360
+      end: 420
+- name: Shoplifting020_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2340
+      end: 2460
+- name: Shoplifting021_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2070
+      end: 2220
+- name: Shoplifting022_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 270
+      end: 420
+  - id: 1
+    timestamp-frames:
+      start: 1440
+      end: 1560
+- name: Shoplifting027_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1080
+      end: 1160
+  - id: 1
+    timestamp-frames:
+      start: 1470
+      end: 1710
+- name: Shoplifting028_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 570
+      end: 840
+- name: Shoplifting029_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1020
+      end: 1470
+- name: Shoplifting031_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 120
+      end: 330
+- name: Shoplifting033_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 630
+      end: 750
+- name: Shoplifting034_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 7350
+      end: 7470
+- name: Shoplifting037_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1140
+      end: 1200
+- name: Shoplifting039_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2190
+      end: 2340
+- name: Shoplifting044_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 11070
+      end: 11250
+- name: Shoplifting049_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1020
+      end: 1350
+Stealing:
+- name: Stealing019_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2730
+      end: 2790
+  - id: 1
+    timestamp-frames:
+      start: 4170
+      end: 4350
+- name: Stealing036_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1260
+      end: 1590
+- name: Stealing058_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 570
+      end: 3660
+- name: Stealing062_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 360
+      end: 1050
+- name: Stealing079_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2550
+      end: 3210
+  - id: 1
+    timestamp-frames:
+      start: 3510
+      end: 4500
+Vandalism:
+- name: Vandalism007_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 240
+      end: 750
+- name: Vandalism015_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 2010
+      end: 2700
+- name: Vandalism017_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 270
+      end: 330
+  - id: 1
+    timestamp-frames:
+      start: 780
+      end: 840
+- name: Vandalism028_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 1830
+      end: 1980
+  - id: 1
+    timestamp-frames:
+      start: 2400
+      end: 2670
+- name: Vandalism036_x264
+  video-segments:
+  - id: 0
+    timestamp-frames:
+      start: 540
+      end: 780
+  - id: 1
+    timestamp-frames:
+      start: 990
+      end: 1080

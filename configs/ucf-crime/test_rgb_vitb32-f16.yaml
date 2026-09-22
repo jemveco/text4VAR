@@ -1,0 +1,39 @@
+weights: exp/ucf-crime/ViT-B/32/2025_11_23_154248-vit/model_best.pt
+seed: 1024
+data:
+    dataset: ucf-crime
+    modality: RGB
+    num_segments: 16
+    seg_length: 1
+    batch_size: 4
+    workers: 0
+    num_classes: 13
+    image_tmpl: frame_{}.jpg
+    val_root: /media/data/UCF_Crime/UCF_Crime/Images
+    val_list: lists/ucf-crime/uca-set/test.yaml
+    label_list: lists/ucf_crime_labels.csv
+    input_size: 224
+    random_shift: True
+network:
+    arch: ViT-B/32  #ViT-B/32 ViT-B/16
+    init: True
+    drop_out: 0.0
+    emb_dropout: 0.0
+    type: clip_ucf
+    sim_header: Transf
+    drop: 0
+solver:
+    type: cosine
+    epochs: 15
+    start_epoch: 0
+    optim: adamw
+    lr: 5.e-5
+    lr_warmup_step: 5
+    weight_decay: 0.2
+    loss_type: CE
+    evaluate: False
+    clip_ratio: 0.1
+    grad_accumulation_steps: 2
+logging:
+    print_freq: 10
+    eval_freq: 5

@@ -1,0 +1,53 @@
+weights: exp/xd-violence/ViT-L-14/clip_ucf_anomize_not_splitted_class_aug_focal_loss-2026_07_01_131353/model_best.pt
+projector: exp/xd-violence/ViT-L-14/clip_ucf_anomize_not_splitted_class_aug_focal_loss-2026_07_01_131353/projection_matrix.pt
+seed: 1024
+dataset:
+    name: xd-violence
+    num_classes: 5
+    modality: RGB
+    frame_template: frame_{}.jpg
+    frame_idx_bias: 1
+    input_size: 224 # Maybe I'll move this to a "transform" block. TODO: Check the transformation parameters
+    num_segments: 16
+    seg_length: 1
+    loop: True
+    sample_type: random_shift
+    #####################
+    # Sample range in the case of dense sampling
+    # sample_range: 64
+    #####################
+    # 
+    # test_clips: 3
+    # min_frames: 8
+    #####################
+    root_path: /mnt/hdd/datasets/xd-violence/frames/single-label
+    val_data:
+        path: test
+        list: lists/xd-violence/test.yaml
+    label_list: lists/xd-violence/xd_violence_labels.csv
+dataloader:
+    batch_size: 8
+    num_workers: 0
+network:
+    arch: ViT-L/14  #ViT-B/32 ViT-B/16
+    init: True
+    drop_out: 0.0
+    emb_dropout: 0.0
+    type: clip_ucf
+    sim_header: Transf
+    drop: 0
+solver:
+    type: cosine
+    epochs: 30
+    start_epoch: 0
+    optim: adamw
+    lr: 2.e-5
+    lr_warmup_step: 5
+    weight_decay: 1.e-2
+    loss_type: CE
+    evaluate: False
+    clip_ratio: 0.1
+    grad_accumulation_steps: 2
+logging:
+    print_freq: 1
+    eval_freq: 5

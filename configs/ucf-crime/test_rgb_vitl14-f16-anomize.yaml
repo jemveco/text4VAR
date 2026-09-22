@@ -1,0 +1,42 @@
+weights: exp/ucf-crime/ViT-L-14/2026_05_27_160958-clip_ucf_mean_segments_not_splitted_class_aug/model_best.pt
+projector: exp/ucf-crime/ViT-L-14/2026_05_27_160958-clip_ucf_mean_segments_not_splitted_class_aug/projection_matrix.pt
+seed: 1024
+dataset:
+    name: ucf-crime
+    num_classes: 13
+    modality: RGB
+    image_template: frame_{}.jpg
+    num_segments: 16
+    seg_length: 1
+    root_path: /tmp/data/Emilio/UCF_Crime/UCF_Crime
+    val_path: Images
+    val_list: lists/ucf-crime/val.yaml
+    label_list: lists/ucf_crime_labels.csv
+    input_size: 224
+    no_captions: True
+dataloader:
+    batch_size: 8
+    num_workers: 0
+network:
+    arch: ViT-L/14  #ViT-B/32 ViT-B/16
+    init: True
+    drop_out: 0.0
+    emb_dropout: 0.0
+    type: clip_ucf
+    sim_header: Transf
+    drop: 0
+solver:
+    type: cosine
+    epochs: 15
+    start_epoch: 0
+    optim: adamw
+    lr: 2.e-5
+    lr_warmup_step: 5
+    weight_decay: 1.e-2
+    loss_type: CE
+    evaluate: False
+    clip_ratio: 0.1
+    grad_accumulation_steps: 2
+logging:
+    print_freq: 10
+    eval_freq: 5

@@ -1,0 +1,69 @@
+resume:
+seed: 1024
+# projector: embeddings/single_description/clip/ViT-L14_no_reduce/2026_06_30_214452/projector/centroids_raw_clip_ViT-L14_nr.pt
+# projector: embeddings/single_description/clip/ViT-L14_pca/2026_07_06_151018/projector/centroids_raw_clip_ViT-L14_pca.pt # REVISAR LOG FILE
+# reductor: embeddings/single_description/clip/ViT-L14_pca/2026_07_06_151018/reductor/384.pt # REVISAR LOG FILE
+exp/ucf-crime/ViT-L-14/2026_06_02_142136-clip_ucf_pca_mean_segments_not_splitted_class_aug/model_best.pt
+#reductor: embeddings/clip/pca_192/mean_class-text/clip_ViT-L-14_pca-model_192.pt
+#reductor: embeddings/clip/ViT-L14_pca_mean/2026_06_02_064828/reductor/384.pt
+dataset:
+    name: ucf-crime  # Dataset's name (this will be used only for log info)
+    num_classes: 13  # Dataset's number of classes (this will be used only for log info)
+    modality: RGB    # Will process idividual frames/images or video? (RGB or video)
+    image_template: frame_{}.jpg # The template for each frame in the case of RGB modality
+    num_segments: 16 # 
+    seg_length: 1
+    loop: True
+    # The root path to the dataset, this config is optional
+    # and if is not set nor defined then the path used to
+    # retrieve the each split will be the one defined in his
+    # path config, if set then this path will be concatenated
+    # with those paths to get the full path to each split
+    root_path: /tmp/data/Emilio/UCF_Crime/UCF_Crime
+    # Each split information should be defined has:
+    # "split":
+    #     path: path/to/the/split/data
+    #     list: path/to/the/file/with/the/split/info
+    train:
+        path: Images
+        list: lists/ucf-crime/train.yaml
+    val:
+        path: Images
+        list: lists/ucf-crime/val.yaml
+    label_list: lists/ucf_crime_labels.csv # File containing the labels and IDs of each class
+    input_size: 224 # The size of each image/frame
+    # random_shift: True
+    # process_by_frame: True # Similar to dense sampling but the video will be processed each "num_segments" frames
+    # Similar to dense sampling but each frame of the video
+    # will be processed, if "range" is defined in the list
+    # files of each split, then only the frames within that
+    # range will be processed
+    # process_by_frame: True
+    sample_type: random_shift # process_by_frame | random_shift | val
+    no_captions: True
+dataloader:
+    batch_size: 8
+    num_workers: 0
+network:
+    arch: ViT-L/14  #ViT-B/32 ViT-B/16
+    init: True
+    drop_out: 0.0
+    emb_dropout: 0.0
+    type: clip_ucf
+    sim_header: Transf
+    drop: 0
+solver:
+    type: cosine
+    epochs: 30
+    start_epoch: 0
+    optim: adamw
+    lr: 5.e-5
+    lr_warmup_step: 5
+    weight_decay: 0.2
+    loss_type: CE
+    evaluate: False
+    clip_ratio: 0.1
+    grad_accumulation_steps: 2
+logging:
+    print_freq: 1
+    eval_freq: 1

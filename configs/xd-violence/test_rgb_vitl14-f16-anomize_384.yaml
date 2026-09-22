@@ -1,0 +1,56 @@
+# weights: exp/ucf-crime/ViT-L-14/clip_ucf_anomize_not_splitted_class_aug_focal_loss-2026_07_02_130338/model_best.pt
+# projector: exp/ucf-crime/ViT-L-14/clip_ucf_anomize_not_splitted_class_aug_focal_loss-2026_07_02_130338/projection_matrix.pt
+# weights: exp/ucf-crime/ViT-L-14/clip_ucf_anomize_not_splitted_class_aug_focal_loss-2026_07_01_131353/model_best.pt # REVISAR LOG FILE
+# projector: exp/ucf-crime/ViT-L-14/clip_ucf_anomize_not_splitted_class_aug_focal_loss-2026_07_01_131353/projection_matrix.pt # REVISAR LOG FILE
+# weights: exp/xd-violence/ViT-L-14/2026_06_02_142136-clip_ucf_pca_mean_segments_not_splitted_class_aug/model_best.pt
+# projector: exp/xd-violence/ViT-L-14/2026_06_02_142136-clip_ucf_pca_mean_segments_not_splitted_class_aug/projection_matrix.pt
+weights: exp/xd-violence/ViT-L-14/clip_ucf_anomize_not_splitted_class_aug_focal_loss_384-2026_07_06_205922/model_best.pt
+projector: exp/xd-violence/ViT-L-14/clip_ucf_anomize_not_splitted_class_aug_focal_loss_384-2026_07_06_205922/projection_matrix.pt
+seed: 1024
+dataset:
+    name: xd-violence
+    num_classes: 5
+    modality: RGB
+    num_segments: 16
+    seg_length: 1
+    loop: True
+    root_path: /mnt/data/Emilio/XD-Violence/test
+    val_data:
+        path: frames
+        list: lists/xd-violence/test.yaml
+    label_list: lists/xd-violence/xd_violence_labels.csv
+    sample_type: val
+    input_size: 224
+    no_captions: True
+    #####################
+    sample_range: False
+    dense_sample: False
+    test_clips: 3
+    min_frames: 8
+    #####################
+dataloader:
+    batch_size: 8
+    num_workers: 0
+network:
+    arch: ViT-L/14  #ViT-B/32 ViT-B/16
+    init: True
+    drop_out: 0.0
+    emb_dropout: 0.0
+    type: clip_ucf
+    sim_header: Transf
+    drop: 0
+solver:
+    type: cosine
+    epochs: 15
+    start_epoch: 0
+    optim: adamw
+    lr: 2.e-5
+    lr_warmup_step: 5
+    weight_decay: 1.e-2
+    loss_type: CE
+    evaluate: False
+    clip_ratio: 0.1
+    grad_accumulation_steps: 2
+logging:
+    print_freq: 1
+    eval_freq: 5
