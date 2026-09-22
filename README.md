@@ -1,6 +1,6 @@
 # text4VAR
 ## Resultados de experimentos con UCF-Crime:
-### Experimento: CLIP (ViT-L/14) con matriz de clasificación de centroides (calculados por *promedio*) de descripciones de segmentos anómalos
+#### Experimento: CLIP (ViT-L/14) con matriz de clasificación de centroides (calculados por *promedio*) de descripciones de segmentos anómalos.
 1. Descripción: sin **Dropout**, con **Label Smoothing**, sin **WeightedRandomSampler**
     * Parámetros:
         * Dropout: 0.0
@@ -76,7 +76,7 @@
         * A nivel de video:
             * Soft Voting: Top@1: 57.14%, Top@3: 80.00%
             * Hard Voting: Top@1: 57.14%, Top@3: 69.29%
-### Experimento: CLIP (ViT-L/14) con matriz de clasificación de centroides (calculados por *promedio*) de descripciones de segmentos anómalos y con reducciones de dimensionalidad en esta y en el embedding de salida del transformer temporal. Todos estos experimentos fueron realizados sin usar dropout, label smoothing y WeightedRandomSampler
+#### Experimento: CLIP (ViT-L/14) con matriz de clasificación de centroides (calculados por *promedio*) de descripciones de segmentos anómalos y con reducciones de dimensionalidad en esta y en el embedding de salida del transformer temporal. Todos estos experimentos fueron realizados sin usar dropout, label smoothing y WeightedRandomSampler.
 6. Descripción: Reduciendo con $\text{PCA}_{\omega=0.75}, d=562$
     * Resultados:
         * A nivel de segmento:
@@ -107,7 +107,7 @@
         * A nivel de video:
             * Soft Voting: Top@1: 54.29%, Top@3: 75.71%
             * Hard Voting: Top@1: 54.29%, Top@3: 68.57%
-### Experimento: CLIP (ViT-L/14) con matriz de clasificación de descripciones sintéticas de las anomalías. Todos estos experimentos fueron realizados sin usar dropout, label smoothing y WeightedRandomSampler
+#### Experimento: CLIP (ViT-L/14) con matriz de clasificación de descripciones sintéticas de las anomalías. Todos estos experimentos fueron realizados sin usar dropout, label smoothing y WeightedRandomSampler.
 9. Resultados:
     * A nivel de segmento:
         * Accuracy: Top@1: 51.92%, Top@3: 80.13%
@@ -118,7 +118,7 @@
         * Soft Voting: Top@1: 52.14%, Top@3: 80.00%
         * Hard Voting: Top@1: 52.14%, Top@3: 67.86%
 ## Resultados de experimentos con XD-Violence:
-### Experimento: CLIP (ViT-L/14) con matriz de clasificación de descripciones sintéticas de las anomalías. Todos estos experimentos fueron realizados sin usar dropout, label smoothing y WeightedRandomSampler
+#### Experimento: CLIP (ViT-L/14) con matriz de clasificación de descripciones sintéticas de las anomalías. Todos estos experimentos fueron realizados sin usar dropout, label smoothing y WeightedRandomSampler.
 10. Resultados:
     * A nivel de segmento:
         * Accuracy: Top@1: 96.03%, Top@3: 98.80%
@@ -129,7 +129,7 @@
         * Soft Voting: Top@1: 95.36%, Top@3: 98.45%
         * Hard Voting: Top@1: 94.92%, Top@3: 98.23%
 ## Resultados de cross dataset evaluation:
-### Experimento: CLIP (ViT-L/14) con matriz de clasificación de descripciones sintéticas de las anomalías para el entrenamiento con XD-Violence y CLIP (ViT-L/14) con matriz de clasificación de centroides (calculados por *promedio*) de descripciones de segmentos anómalos para UCF-Crime. En estas evaluaciones se eliminaron las filas de las matrices de clasificación de las clases que no se comparten entre los datasets, es decir, del modelo entrenado con UCF-Crime se eliminaron las filas que representan a las clases Arrest, Arson, Assault, Burglary, Robbery, Shoplifting, Stealing y Vandalism a la vez que se "ignoraron" los videos de estas clases, mientras que para XD-Violence se ignoró la clase Riot y de igual forma al evaluar con el modelo entrenado con XD-Violence pero eliminando la clase Riot de la matriz de clasificación. Todos estos experimentos fueron realizados sin usar dropout, label smoothing y WeightedRandomSampler
+#### Experimento: CLIP (ViT-L/14) con matriz de clasificación de descripciones sintéticas de las anomalías para el entrenamiento con XD-Violence y CLIP (ViT-L/14) con matriz de clasificación de centroides (calculados por *promedio*) de descripciones de segmentos anómalos para UCF-Crime. En estas evaluaciones se eliminaron las filas de las matrices de clasificación de las clases que no se comparten entre los datasets, es decir, del modelo entrenado con UCF-Crime se eliminaron las filas que representan a las clases Arrest, Arson, Assault, Burglary, Robbery, Shoplifting, Stealing y Vandalism a la vez que se "ignoraron" los videos de estas clases, mientras que para XD-Violence se ignoró la clase Riot y de igual forma al evaluar con el modelo entrenado con XD-Violence pero eliminando la clase Riot de la matriz de clasificación. Todos estos experimentos fueron realizados sin usar dropout, label smoothing y WeightedRandomSampler.
 11. Descripción: Entrenamiento con UCF-Crime
     * Resultados: UCF-Crime
         * A nivel de segmento:
