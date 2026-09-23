@@ -59,8 +59,8 @@
             * Recall: 42.08
             * F1-score: 38.19
         * A nivel de video:
-            * Soft Voting: Top@1: 57.14%, Top@3: 80.00%
-            * Hard Voting: Top@1: 57.14%, Top@3: 69.29%
+            * Soft Voting: Top@1: 52.86%, Top@3: 72.86%
+            * Hard Voting: Top@1: 53.57%, Top@3: 70.00%
 5. Descripción: con **Dropout**, con **Label Smoothing**, con **WeightedRandomSampler**
     * Parámetros:
         * Dropout: 0.3
