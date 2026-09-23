@@ -1,11 +1,11 @@
 # text4VAR
 ## Resultados de experimentos con UCF-Crime:
 #### Experimento: CLIP (ViT-L/14) con matriz de clasificación de centroides (calculados por *promedio*) de descripciones de segmentos anómalos.
-1. Descripción: sin **Dropout**, con **Label Smoothing**, sin **WeightedRandomSampler**
+1. Descripción: sin **Dropout**, sin **Label Smoothing**, sin **WeightedRandomSampler**
     * Parámetros:
         * Dropout: 0.0
         * Loss Function: Cross Entropy
-            * Labels Smoothing: 0.1
+            * Labels Smoothing: 0.0
         * Sampler: N/A
     * Resultados:
         * A nivel de segmento:
